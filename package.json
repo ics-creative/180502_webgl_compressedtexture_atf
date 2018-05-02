@@ -1,0 +1,36 @@
+{
+  "name": "WebGL_ATF",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "gulp": "gulp",
+    "webpack": "webpack",
+    "start": "gulp start",
+    "tsc": "gulp tsCompile",
+    "tslint": "gulp tsLint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/webgl-ext": "0.0.29",
+    "@types/gl-matrix": "^2.4.0",
+    "@types/stats.js": "^0.17.0",
+    "browser-sync": "^2.18.8",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-tslint": "^8.1.2",
+    "require-dir": "^1.0.0",
+    "ts-loader": "^3.5.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.2.1",
+    "webpack": "^4.6.0",
+    "webpack-stream": "^4.0.3"
+  },
+  "dependencies": {
+    "gl-matrix": "^2.5.1"
+  }
+}
