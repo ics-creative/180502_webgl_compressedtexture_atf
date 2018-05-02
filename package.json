@@ -17,7 +17,7 @@
     "@types/webgl-ext": "0.0.29",
     "@types/gl-matrix": "^2.4.0",
     "@types/stats.js": "^0.17.0",
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.24.1",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.1.0",
