@@ -2,7 +2,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
-    "tslint": "gulp tsLint"
+    "lint": "tslint --project tslint.json",
+    "format": "tslint --project tslint.json --fix"
   },
   "devDependencies": {
     "@types/gl-matrix": "^2.4.0",
