@@ -1,8 +1,4 @@
 {
-  "name": "WebGL_ATF",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
   "scripts": {
     "gulp": "gulp",
     "webpack": "webpack",
@@ -10,9 +6,6 @@
     "tsc": "gulp tsCompile",
     "tslint": "gulp tsLint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/webgl-ext": "0.0.29",
     "@types/gl-matrix": "^2.4.0",
@@ -32,5 +25,6 @@
   },
   "dependencies": {
     "gl-matrix": "^2.5.1"
-  }
+  },
+  "private": true
 }
