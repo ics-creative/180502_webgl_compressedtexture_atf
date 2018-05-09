@@ -11,6 +11,9 @@ import {ATF, ATFCompressedTextureData} from './project/ATF';
 import {CompressedTexture} from './project/CompressedTexture';
 import {SimpleTexturingShader} from './project/SimpleTexturingShader';
 
+/**
+ * エントリーポイントのクラスです。
+ */
 class Main
 {
   private static COMPRESSED_TEXTURE_FORMAT_MAP:any = {
@@ -275,4 +278,6 @@ class Main
   }
 }
 
-window.addEventListener(EventName.DOM_CONTENT_LOADED, () => new Main());
+window.addEventListener(EventName.DOM_CONTENT_LOADED, () => {
+  new Main();
+});
