@@ -1,6 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #container {
   position: relative;
 }
+
 .guiStyle {
   position: absolute;
   top: 0;

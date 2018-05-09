@@ -1,22 +1,32 @@
-// ビルド設定ファイル
-const buidConfig = require("./build_config");
-
-const entry = {};
-
 /** webpackの設定ファイルです。 */
-let webpackConfig = {
-  entry: buidConfig.tsEntryFiles,
+const webpackConfig = {
+  entry: './src/Main.ts',
+  // ファイルの出力設定
   output: {
-    filename: "[name].js"
+    publicPath: 'js/',
+    // 出力ファイル名
+    filename: 'script.js'
   },
-  devtool: "source-map",
   resolve: {
-    extensions: ["*", ".js", ".ts"]
+    extensions: ['*', '.js', '.ts']
   },
   module: {
-    loaders: [
-      {test: /\.ts$/, loader: 'ts-loader'}
+    rules: [
+      {
+        // 拡張子 .ts の場合
+        test: /\.ts$/,
+        // TypeScript をコンパイルする
+        use: 'ts-loader'
+      }
     ]
+
+  },
+
+  // ローカル開発用環境を立ち上げる
+  // 実行時にブラウザが自動的に localhost を開く
+  devServer: {
+    contentBase: 'dist',
+    open: true
   }
 };
 
