@@ -26,5 +26,6 @@
   "dependencies": {
     "gl-matrix": "^2.5.1"
   },
+  "license": "MIT",
   "private": true
 }
