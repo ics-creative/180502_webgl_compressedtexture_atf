@@ -1,5 +1,5 @@
-import {VertexAttributeObject} from "../engine/VertexAttributeObject";
-import {SceneObject} from "../object/SceneObject";
+import {VertexAttributeObject} from '../engine/VertexAttributeObject';
+import {SceneObject} from '../object/SceneObject';
 
 export class Primitive extends SceneObject
 {
@@ -41,7 +41,7 @@ export class Primitive extends SceneObject
 
     if (usePosition)
     {
-      attribute = new VertexAttributeObject("position");
+      attribute = new VertexAttributeObject('position');
       attribute.buffer = this.context.createBuffer();
       this.vboList.push(attribute);
 
@@ -51,7 +51,7 @@ export class Primitive extends SceneObject
 
     if (useNormal)
     {
-      attribute = new VertexAttributeObject("normal");
+      attribute = new VertexAttributeObject('normal');
       attribute.buffer = this.context.createBuffer();
       this.vboList.push(attribute);
 
@@ -61,7 +61,7 @@ export class Primitive extends SceneObject
 
     if (useUV)
     {
-      attribute = new VertexAttributeObject("uv");
+      attribute = new VertexAttributeObject('uv');
       attribute.buffer = this.context.createBuffer();
       this.vboList.push(attribute);
 

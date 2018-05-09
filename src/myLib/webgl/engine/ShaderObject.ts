@@ -1,5 +1,5 @@
-import {ShaderAttributeObject} from "./ShaderAttributeObject";
-import {UniformObject} from "./UniformObject";
+import {ShaderAttributeObject} from './ShaderAttributeObject';
+import {UniformObject} from './UniformObject';
 
 export class ShaderObject
 {
@@ -97,7 +97,7 @@ export class ShaderObject
           break;
         case UniformObject.TYPE_TEXTURE:
           this.context.uniform1i(uniform.location, uniform.value);
-          this.context.activeTexture(this.context["TEXTURE" + uniform.value]);
+          this.context.activeTexture(this.context['TEXTURE' + uniform.value]);
           this.context.bindTexture(this.context.TEXTURE_2D, uniform.texture);
           break;
         default:

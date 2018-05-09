@@ -1,10 +1,10 @@
-import {vec3} from "gl-matrix";
-import KeyboardEventName from "../../enum/events/KeyboardEventName";
-import MouseEventName from "../../enum/events/MouseEventName";
-import MSGestureEventName from "../../enum/events/MSGestureEventName";
-import TouchEventName from "../../enum/events/TouchEventName";
-import KeyCode from "../../enum/ui/KeyCode";
-import {Camera} from "../engine/Camera";
+import {vec3} from 'gl-matrix';
+import KeyboardEventName from '../../enum/events/KeyboardEventName';
+import MouseEventName from '../../enum/events/MouseEventName';
+import MSGestureEventName from '../../enum/events/MSGestureEventName';
+import TouchEventName from '../../enum/events/TouchEventName';
+import KeyCode from '../../enum/ui/KeyCode';
+import {Camera} from '../engine/Camera';
 
 export class RoundCameraController
 {
@@ -73,7 +73,7 @@ export class RoundCameraController
     });
 
     // touch
-    if ("ontouchstart" in window)
+    if ('ontouchstart' in window)
     {
       this._stage.addEventListener(TouchEventName.TOUCH_START, (event:TouchEvent) =>
       {
@@ -88,7 +88,7 @@ export class RoundCameraController
         this._touchEndHandler(event);
       });
     }
-    if ("ongesturestart" in window)
+    if ('ongesturestart' in window)
     {
       this._stage.addEventListener(MSGestureEventName.GESTURE_START, (event:MSGestureEvent) =>
       {

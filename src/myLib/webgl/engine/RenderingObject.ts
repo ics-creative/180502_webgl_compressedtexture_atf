@@ -1,6 +1,6 @@
-import {ShaderAttributeObject} from "./ShaderAttributeObject";
-import {ShaderObject} from "./ShaderObject";
-import {VertexAttributeObject} from "./VertexAttributeObject";
+import {ShaderAttributeObject} from './ShaderAttributeObject';
+import {ShaderObject} from './ShaderObject';
+import {VertexAttributeObject} from './VertexAttributeObject';
 
 export class RenderingObject
 {

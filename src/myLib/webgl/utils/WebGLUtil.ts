@@ -10,7 +10,7 @@ export class WebGLUtil
   {
     try
     {
-      return !!WebGLRenderingContext && (!!document.createElement("canvas").getContext("webgl") || !!document.createElement("canvas").getContext("experimental-webgl"));
+      return !!WebGLRenderingContext && (!!document.createElement('canvas').getContext('webgl') || !!document.createElement('canvas').getContext('experimental-webgl'));
     } catch (e)
     {
       return false;

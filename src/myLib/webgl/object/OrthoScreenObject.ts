@@ -1,6 +1,6 @@
-import {mat4, vec3} from "gl-matrix";
-import {RenderingObject} from "../engine/RenderingObject";
-import {VertexAttributeObject} from "../engine/VertexAttributeObject";
+import {mat4, vec3} from 'gl-matrix';
+import {RenderingObject} from '../engine/RenderingObject';
+import {VertexAttributeObject} from '../engine/VertexAttributeObject';
 
 export class OrthoScreenObject extends RenderingObject
 {
@@ -31,7 +31,7 @@ export class OrthoScreenObject extends RenderingObject
     this.context.bindBuffer(this.context.ARRAY_BUFFER, vbo);
     this.context.bufferData(this.context.ARRAY_BUFFER, new Float32Array(vPosition), this.context.STATIC_DRAW);
     this.vboDataList[0] = vPosition;
-    attribute = new VertexAttributeObject("position");
+    attribute = new VertexAttributeObject('position');
     attribute.buffer = vbo;
     this.vboList[0] = attribute;
 

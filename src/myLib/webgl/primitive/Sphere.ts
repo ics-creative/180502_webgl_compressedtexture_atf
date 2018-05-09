@@ -1,5 +1,5 @@
-import {vec3} from "gl-matrix";
-import {Primitive} from "./Primitive";
+import {vec3} from 'gl-matrix';
+import {Primitive} from './Primitive';
 
 export class Sphere extends Primitive
 {

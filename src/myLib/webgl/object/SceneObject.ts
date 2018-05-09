@@ -1,5 +1,5 @@
-import {mat4, vec3} from "gl-matrix";
-import {RenderingObject} from "../engine/RenderingObject";
+import {mat4, vec3} from 'gl-matrix';
+import {RenderingObject} from '../engine/RenderingObject';
 
 export class SceneObject extends RenderingObject
 {
